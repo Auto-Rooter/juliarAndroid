@@ -1,6 +1,7 @@
 # Juliar Android
 
 An Android App that allows you to run juliar.Future Apps and interpret texts.
+![JuliarAndroid](https://user-images.githubusercontent.com/11934545/29999203-8e59da84-900d-11e7-8576-27be59efe843.png)
 
 ### Getting Started
 Launch the App and begin by typing `function main() = { printLine("Hello");}` and clicking execute button.
