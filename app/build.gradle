@@ -42,3 +42,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     implementation files('libs/JuliarAndroidLib.jar')
 }
+
+configurations.all {
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
