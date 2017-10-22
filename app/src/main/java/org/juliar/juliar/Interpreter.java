@@ -157,7 +157,7 @@ public class Interpreter extends AppCompatActivity {
             setOut(ps);
             setErr(ps2);
             JuliarAndroid interpreter = new JuliarAndroid();
-            interpreter.compile(msg, "", false);
+            interpreter.compile(msg);
             out.flush();
             //setOut(out);
             //setErr(err);
