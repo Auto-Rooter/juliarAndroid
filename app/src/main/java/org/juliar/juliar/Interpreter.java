@@ -1,5 +1,6 @@
 package org.juliar.juliar;
 
+import android.annotation.SuppressLint;
 import android.view.MotionEvent;
 import android.view.ScaleGestureDetector;
 import android.view.ScaleGestureDetector.SimpleOnScaleGestureListener;
@@ -17,6 +18,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.bugsnag.android.Bugsnag;
 import com.juliar.JuliarAndroid;
 
 import java.io.ByteArrayOutputStream;
@@ -33,7 +36,6 @@ import static java.lang.System.setOut;
 
 public class Interpreter extends AppCompatActivity {
     private RecyclerView recyclerView;
-    private GridLayoutManager gridLayoutManager;
     private CustomAdapter adapter;
     private List<MyData> data_list;
 
@@ -44,19 +46,23 @@ public class Interpreter extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        Bugsnag.init(this);
+
+        Bugsnag.notify(new RuntimeException("Non-fatal"));
+
         setContentView(R.layout.activity_interpreter);
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         data_list = new ArrayList<>();
 
         //Some Function
-        String timeStamp = new SimpleDateFormat("h:mm:ss").format(new Date());
+        @SuppressLint("SimpleDateFormat") String timeStamp = new SimpleDateFormat("h:mm:ss").format(new Date());
 
         MyData data = new MyData(timeStamp,"Welcome to Juliar.Future Interpreter for Android created by Juliar Team. Version: v0.01","Juliar Welcome Message");
         data_list.add(data);
         //
 
-        gridLayoutManager = new GridLayoutManager(this,1);
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 1);
         recyclerView.setLayoutManager(gridLayoutManager);
 
 

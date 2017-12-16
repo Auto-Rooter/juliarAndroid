@@ -9,6 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.bugsnag.android.API_KEY"
+            android:value="7d292ced7c2dc9ce09752f7e7be8131b"/>
         <activity android:name=".Interpreter"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" >
