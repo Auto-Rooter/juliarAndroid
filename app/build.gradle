@@ -28,6 +28,7 @@ android {
     }
     configurations.all {
         resolutionStrategy.force 'com.google.code.findbugs:jsr305:1.3.9'
+        resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
     }
 }
 
@@ -45,7 +46,7 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:26.1.0'
     compile 'com.android.support:cardview-v7:26.1.0'
     compile 'com.android.support:design:26.1.0'
-    compile 'com.github.juliarLang.juliarFuture:jlib:master-SNAPSHOT'
+    compile 'com.github.juliarLang.juliar:juliarlib:master-SNAPSHOT'
     compile 'com.bugsnag:bugsnag-android:4.1.5'
     testCompile 'junit:junit:4.12'
 }

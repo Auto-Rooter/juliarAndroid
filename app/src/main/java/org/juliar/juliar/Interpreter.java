@@ -58,7 +58,8 @@ public class Interpreter extends AppCompatActivity {
         //Some Function
         @SuppressLint("SimpleDateFormat") String timeStamp = new SimpleDateFormat("h:mm:ss").format(new Date());
 
-        MyData data = new MyData(timeStamp,"Welcome to Juliar.Future Interpreter for Android created by Juliar Team. Version: v0.01","Juliar Welcome Message");
+        MyData data = new MyData(timeStamp,"Welcome to Juliar (Android version) created by Juliar Team. Version: 2018",
+                "Juliar Welcome Message");
         data_list.add(data);
         //
 
