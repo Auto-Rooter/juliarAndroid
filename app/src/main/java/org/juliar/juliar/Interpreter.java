@@ -20,7 +20,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bugsnag.android.Bugsnag;
-import com.juliar.JuliarAndroid;
+import com.juliar.JuliarLib;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
