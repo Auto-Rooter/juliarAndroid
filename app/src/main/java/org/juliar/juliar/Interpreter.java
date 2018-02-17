@@ -58,7 +58,7 @@ public class Interpreter extends AppCompatActivity {
         //Some Function
         @SuppressLint("SimpleDateFormat") String timeStamp = new SimpleDateFormat("h:mm:ss").format(new Date());
 
-        MyData data = new MyData(timeStamp,"Welcome to Juliar (Android version) created by Juliar Team. Version: 2018",
+        MyData data = new MyData(timeStamp,"Welcome to Juliar for Android created by Juliar Team. Version: 2018",
                 "Juliar Welcome Message");
         data_list.add(data);
         //
@@ -163,11 +163,11 @@ public class Interpreter extends AppCompatActivity {
             // Tell Java to use your special stream
             setOut(ps);
             setErr(ps2);
-            JuliarAndroid interpreter = new JuliarAndroid();
+            JuliarLib interpreter = new JuliarLib();
             interpreter.compile(msg);
             out.flush();
-            //setOut(out);
-            //setErr(err);
+            setOut(out);
+            setErr(err);
             return newOut.toString() + newErr.toString();
         } catch(Exception e) {
             return e.toString();

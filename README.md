@@ -4,7 +4,8 @@ Juliar for Android is an open source Android App that allows you to run and exec
 scripts from your Android phone or tablet. This project is a wrapper juliarlib.jar which is
 built from the main Juliar repo. If you would like to create apps using Juliar or 
 would like to use Juliar libraries in Android, juliarlib.jar is the place to start.
-![JuliarAndroid](https://user-images.githubusercontent.com/11934545/35021532-477f528a-faff-11e7-95d5-370a34bf43c5.png)
+[![JuliarAndroid](https://user-images.githubusercontent.com/11934545/36337570-2822a79a-1367-11e8-8224-a30dd430dabc.png)](https://juliar.org/)
+
 
 ### Getting Started
 Launch the App and begin by typing `function main() = { printLine("Hello");}` and clicking execute button.
