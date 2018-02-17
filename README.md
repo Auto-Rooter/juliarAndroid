@@ -1,4 +1,5 @@
 # Juliar for Android
+[![Build Status](https://travis-ci.org/juliarLang/juliarAndroid.svg?branch=master)](https://travis-ci.org/juliarLang/juliarAndroid)
 
 Juliar for Android is an open source Android App that allows you to run and execute Juliar
 scripts from your Android phone or tablet. This project is a wrapper juliarlib.jar which is
