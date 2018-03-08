@@ -13,7 +13,7 @@ env:
   - ANDROID_API_LEVEL=26
   - EMULATOR_API_LEVEL=22
   - ANDROID_BUILD_TOOLS=26.0.2
-  - ADB_INSTALL_TIMEOUT=5
+  - ADB_INSTALL_TIMEOUT=10
   - secure: OnqGJ6Mvd2WVIivoIt//KDFsFePNG3I0WIzIQBKSKIfGb8jb60ptS07hgtNqBnAH3B4UcwR7S6aLOJxn/f3JPqJ7++Dt5XZVFNTwcY1tCH3KTtxQoI1maBFvPBYU8dvq+dMPIWzSJoGLs/OrxsywBpn3dCMtl/M23au/2VST3SKWCS3FFmvIaUZlwRQV4I/pzbNWqeP90vk5kyN3r4AwLXCjlrWfxxnDtGFwrGiAtHUBVBE28VflZANqUuquu8c61Jq/iXj0vfKnYjenyv7BC/ZNtMWf21drq6ZN9Fb7YRL35gsoAJCVdwhzFEr6MbuV3nOUGel4WTRsMm+bSdnHWuclmwelqgSg7r47o5L2l9weh5vfpTPfpuEwCXSFEesu7W0kr8S4v3I0W1rev9a/CWLK0DFs1yavALfhnSdqTryE6oYcoGLZIsVobB9UDop2ab+oRa8beXogaicCUo1t0CSt6s3KQ0ihP18NYNqX/teVDiZYnwQGiAUdu2QefIeA+s657Q699B4SscUJrtFuJ/+MX3DoReNNhvbgVSm63d56DHIQAD7ZVldlSNglQ/Eo0IdHSTJvKHvKldtAyfjddqzGZhJVUbr2K5FQxo8+6MNQZulazRDsuW6FQTsU9SDoqP/gTNaJB7MkU1PMbkbczQ8hkQ6WvrSGmlavQRyFjqo=
   - secure: ZwIF3pKdKIYjOBPOW7uehlZPAlYMqBYyYoaTLKnZBnDA/cyUtCelkceesu+PJHhdWMefUsufGRR8y9Svauzgt/eJm6Yplz+i+xFPmFE6m20azl10koHW3iXEHtr4UofkVv9EXK2WUe8j2uBjfcCljQE99ZlyaOyrQv35ThZX4fGjCmDro2Q9LWeoAw0EYBOxdRPtlLP0MCZPFCR64rDYsfYXuRw1Y9lUVC+KyqiSTcuVbFgJPgt6rvhHaOBHdwXCNLi/kLoqFxVSO1AIU0x7igUQBqVS/chSs3zRTczGPXtzxvk2kZXh8JCNufiUVbvgxXDtJzHEGj6IH0a3pnAp7Hohmy91Jjbe6AKdiR8zs563+WpVksa0tkq78hnhk0JPKK5e6DmICMdjeA6WxxwyQOqd5wHOtVLGweGdkVvuGaZq6VLrrdCXlP+TxdFTm2TccKlBwIoMhuZS/sVjHjznd+3rhAhueqeZ3j/EszyFHyeCkfX688aqiQ7RpSAgTxWuYkiRYv61Zf4P5RRFMR6Y+EgXQt+Mn5JyYZCqaRElLOISxEE8enkLqayrasd2+rFXQc40cM1/4NhhlV38Xk7xhECthOChFll5LYQ7N86hE1yRtP11Q7d8IV06S3LeeFd1P47UbmYsIRBqG2BdDXt08xfHE+t03XakmC6es2tIKeU=
 
@@ -36,8 +36,8 @@ android:
   - extra-google-apis-google-$ANDROID_API_LEVEL
   - extra-google-apis-google-$EMULATOR_API_LEVEL
 
-  - sys-img-armeabi-v7a-$ANDROID_API_LEVEL
-  - sys-img-armeabi-v7a-$EMULATOR_API_LEVEL
+  - sys-img-armeabi-v7a-google_apis-$ANDROID_API_LEVEL
+  - sys-img-armeabi-v7a-google_apis-$EMULATOR_API_LEVEL
 
   licenses:
   - android-sdk-preview-license-.+
