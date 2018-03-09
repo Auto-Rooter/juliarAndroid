@@ -60,11 +60,17 @@ before_deploy:
 #Verify
 - jarsigner -verify app-release-unsigned.apk
 - "${ANDROID_HOME}/build-tools/26.0.2/zipalign -v 4 app-release-unsigned.apk Juliar.apk"
+# Set up git user name and tag this commit
+- git config --local user.name "Juliar Team"
+- git config --local user.email "admin@juliar.org"
+- git tag "JuliarAndroid-$(date +'%Y%m%d-%H%M%S')"
+
 
 deploy:
   provider: releases
   file: Juliar.apk
   skip_cleanup: true
+  overwrite: true
   on:
     repo: juliarLang/juliarAndroid
     tags: true
