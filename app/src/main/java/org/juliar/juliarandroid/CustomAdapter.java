@@ -1,4 +1,4 @@
-package org.juliar.juliar;
+package org.juliar.juliarandroid;
 
 import android.content.Context;
 import android.graphics.Paint;

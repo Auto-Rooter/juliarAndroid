@@ -1,4 +1,4 @@
-package org.juliar.juliar;
+package org.juliar.juliarandroid;
 
 import org.junit.Test;
 

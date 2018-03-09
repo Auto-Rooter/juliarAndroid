@@ -1,4 +1,4 @@
-package org.juliar.juliar;
+package org.juliar.juliarandroid;
 
 /**
  * Created by Andrey Makhanov on 12/4/2016.

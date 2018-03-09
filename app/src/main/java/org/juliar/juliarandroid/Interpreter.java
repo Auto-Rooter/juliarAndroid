@@ -1,4 +1,4 @@
-package org.juliar.juliar;
+package org.juliar.juliarandroid;
 
 import android.annotation.SuppressLint;
 import android.view.MotionEvent;
