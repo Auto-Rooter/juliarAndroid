@@ -53,7 +53,7 @@ script:
 - "./gradlew clean build connectedCheck -PdisablePreDex --stacktrace"
 
 before_deploy:
-- cp $TRAVIS_BUILD_DIR/.keystore $HOME
+- cp $TRAVIS_BUILD_DIR/juliarAndroid.jks $HOME
 - cd app/build/outputs/apk/
 - jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore $HOME/juliarAndroid.jks
   -storepass $storepass -keypass $keypass app-release-unsigned.apk JuliarAndroid
