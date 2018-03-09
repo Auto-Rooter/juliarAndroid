@@ -73,7 +73,8 @@ deploy:
   overwrite: true
   on:
     repo: juliarLang/juliarAndroid
-    tags: true
+    tags: false
+    all_branches: true
     jdk: oraclejdk8
   api_key:
     secure: RAK+kiDRovoMaNNBG7RKpUlxnbYhp5qS9b8QSqELcCSO/7i/bNwbS9rFgiaSioLOLC1Wh2YCM30pja9sYDcFl18N8pXCVWQ3ARpr7J0Yb4/YyGYRevLqWLnJqH1wKtlIbV6qR/SDmGaAZGwMzCk4UACj+zeg68ppiWYlm7l/jwDMhJ///ty66nSb0wLAiLBjFp4aTlNz5ZwQsuXR+r3wXUg7iNgDg95RjglAzyKCZIY8CmH7qJxxRZxL4/vJzA45MX8j56OYUiLEnIOpB+LA8l8MCW4r4mFdJK2FJozXcTVcs9UDuKfVjctOpBYoTzZlEw1MTxcWR2S7N3NLcTXX1mdo5Rc1yB5GbRkM4j5PBpCd4qyqFnnE/KA6+W8Qn3RkIJZ57LDozetf22KuRuUhABXY/MKkUDJaWJ9ANU3+q1Dusn8toHy/ozZtksvKOStezofQ/kN+FCgrc+cNBhA+Ksx1gc0jJD9AMiyWmbo3kDrhz9RxAQURtzrw/y+nxAnb5rog35ZMH+IgY4jPKB/wv3YOYaZOVbgqWDXTUVKsLUGSiPAP3tHL36o94mEnlD6wc1Lu/UVYMa9hvvQop8U3z9Od6RM5Q/ECNVXmNL/FJSmkQrQrlkEzpHq6fj+BB0YZrBY/N2ScMkeYAsWcZoV7qTBImayAtOHNj7HzxceONUw=
